@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+*::selection {
+    background: var(--green);
+    color: white;
+}
+
+:root {
+    --green: rgba(8, 96, 8, 0.905);
+}
+
+section {
+    padding: 1.5rem 9%;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.7rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.header-1,
+.header-2,
+.header-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--green);
+}
+
+.header-1 {
+    border-bottom: .1rem solid rgba(187, 184, 184, 0.379);
+}
+
+.header-1 span {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.header-1 a {
+    padding: 0 .7rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header-1 a:hover {
+    color: black;
+}
+
+.header-2 .logo {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header-2 .logo i {
+    color: yellow;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.header-2 .logo span {
+    color: yellow;
+}
+
+.header-2 .serach-bar-container {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, .2);
+    border-radius: .5rem;
+}
+
+.header-2 .serach-bar-container #search-bar {
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.header-2 .serach-bar-container #search-bar::placeholder {
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-2 .serach-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+.header-2 .serach-bar-container label:hover {
+    color: yellow;
+}
+
+.header-3 {
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 1000;
+}
+
+.header-3 .nav-bar a {
+    color: #666;
+    font-size: 2rem;
+    margin-right: 2rem;
+    padding: 2rem 0;
+}
+
+.header-3 .nav-bar a:hover {
+    border-bottom: .2rem solid var(--green);
+    transition: border-bottom 3;
+    color: var(--green);
+    font-weight: 300;
+}
+
+.header-3 .icons a {
+    color: #666;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.header-3 .icons a:hover {
+    color: var(--green);
+}
+
+.header-3.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#menu-bar {
+    font-size: 3rem;
+    color: #666;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bar:hover {
+    color: var(--green);
+}
+
+.Home {
+    padding-top: 0;
+}
+
+.Home .home-slider {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border: .05rem solid gray;
+    border-top: 0;
+}
+
+.Home .home-slider .box {
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 55rem;
+    position: relative;
+}
+
+.Home .home-slider .box .content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    max-width: 50rem;
+}
+
+.Home .home-slider .box .content span {
+    font-size: 3rem;
+    color: #444;
+}
+
+.Home .home-slider .box .content h3 {
+    font-size: 6rem;
+    color: #333;
+    padding: .5rem;
+}
